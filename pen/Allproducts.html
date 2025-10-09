@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-yellow-100 ">
+ <header class="py-[11px] px-[20px] bg-[white] border-b-[3px] border-[#E8E2C8] fixed w-full top-[0] z-[2]">
+    <div class="container mx-auto flex justify-between items-center gap-[16px]">
+      <a class="flex gap-[11px]" href=""><img class="max-w-[39px] w-full h-[32px]"
+          src="../assets/images/articles/Group.png" alt="logo">
+        <p class="hidden sm:flex"><svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+              <text text-anchor="middle" x="50%" y="80%">Северяночка</text>
+            </symbol>
+
+            <g class="g-ants">
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy">jk</use>
+            </g>
+          </svg>
+        </p>
+      </a>
+      <button
+        class="hidden sm:flex gap-[15px] bg-green-500 max-w-[40px] 2xl:max-w-[140px] xl:max-w-[140px] md:max-w-[140px] lg:max-w-[40px] w-full h-[40px] cursor-pointer items-center p-[8px] text-[white] rounded-[8px]"><img
+          src="../assets/images/articles/menu.png" alt="">
+        <p class="hidden md:flex lg:hidden xl:flex">Каталог</p>
+      </button>
+      <form>
+        <div class="flex">
+          <input
+            class="w-[220px] sm:w-[280px] xl:w-[336px] h-[40px] rounded-l-[8px] border-[2px] border-solid border-green-500 px-[16px] outline-neutral-500 border-r-0 border-r-transparent "
+            type="search" name="" placeholder="Найти товар" id="">
+          <button
+            class="w-[40px] h-[40px] rounded-r-[8px] border-[2px] border-green-500 outline-neutral-500 border-l-0 pl-[7px] cursor-pointer"><img
+              src="../assets/images/articles/search.png" alt=""></button>
+        </div>
+      </form>
+      <ul class="flex gap-[24px] hidden lg:flex">
+        <li class="place-items-center pt-[5px]"><a class="flex flex-col items-center" href="./pen/test.html"><img
+              src="../assets/images/articles/Frame 211.png" alt="">Избранное</a></li>
+        <li class="place-items-center pt-[5px]"><a class="flex flex-col items-center" href=""><img
+              src="../assets/images/articles/Frame 211 (2).png" alt="">Продукты</a></li>
+        <li class="place-items-center"><a class="flex flex-col items-center" href=""><img
+              src="../assets/images/articles/Frame 211 (3).png" alt="">Корзина</a></li>
+      </ul>
+      <div class="hidden sm:flex items-center gap-[10px]">
+        <img class="w-[40px] h-[40px]" src="../assets/images/articles/avatar.png" alt="">
+        <h1 class="pr-[15px] hidden lg:flex">Алексей</h1>
+        <img src="../assets/images/articles/chevron-down.png" alt="">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="bg-[#FBF8EC] px-[20px] pb-[120px]">
+        <div class="container mx-auto">
+          <h1 class="text-[24px] lg:text-[36px] font-[700] pb-[40px]">Все продукты</h1>
+          <div id="product" class="grid grid-cols-4 gap-4"></div>
+          
+      </section>
+    
+    
+
+
+
+  </main>
+<footer class="py-[90px] bg-[#0000001A]  max-h-50">
+    <div class="container mx-auto pt-[40px] pb-[30px] px-4">
+      <div class="flex items-center justify-between">
+        <img src="../assets/images/articles/Group.png" alt="">
+         <ul class="flex items-center gap-[40px]">
+           <li>
+            <a href="">О компании</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+          <li>
+            <a href="">Вакансии</a>
+          </li>
+          <li>
+            <a href="">Статьи</a>
+          </li>
+          <li>
+            <a href="">Политика обработки персональных данных</a>
+          </li>
+        </ul>
+         <a class="flex items-center gap-[20px]" href="">
+          <img class="w-[40px] "
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-js0W9HFrrqe6IlNrRgyjar4BKW7jIvokfQ&s" alt="">
+          <img class="w-[40px]" src="https://cdn-icons-png.flaticon.com/512/733/733583.png" alt="">
+          <img class="w-[40px]" src="https://cdn-icons-png.freepik.com/256/14047/14047486.png?semt=ais_white_label"
+            alt="">
+          <img class="w-[40px]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-juPgT9sYYNeOTWa2dtcy_86xkWwKSG6rA&s" alt="">
+        </a>
+
+        <a class="flex items-center gap-[20px]" href="">
+          <img class="w-[40px]"
+            src="https://st4.depositphotos.com/15317184/27028/v/450/depositphotos_270285308-stock-illustration-phone-and-call-line-icon.jpg"
+            alt="">
+          <h1>8 800 777 33 33</h1>
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="../js/products-data.js"></script>
+  <script src="../js/test.js"></script>
+</body>
+
+</html>

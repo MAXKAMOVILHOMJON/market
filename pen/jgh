@@ -1,0 +1,37 @@
+let srt = document.querySelector("#sspot");
+let id = new URLSearchParams(window.location.search).get('id');
+
+// ID raqam bo‘lsa, raqamga aylantiramiz
+id = Number(id);
+
+// productni filter yoki find bilan topamiz
+let pen = products.filter((el) => el.id === id);
+
+// Agar bitta mahsulot bo‘lsa, find() ishlatish osonroq
+// let pen = products.find(el => el.id === id);
+
+pen.map((el) => {
+  srt.innerHTML += `
+  <div class="pt-6">
+    <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
+      <img src="${el.images[0]}" class="row-span-2 aspect-3/4 size-full rounded-lg object-cover max-lg:hidden" />
+      <img src="${el.images[1]}" class="col-start-2 aspect-3/2 size-full rounded-lg object-cover max-lg:hidden" />
+      <img src="${el.images[2]}" class="col-start-2 row-start-2 aspect-3/2 size-full rounded-lg object-cover max-lg:hidden" />
+      <img src="${el.images[3]}" class="row-span-2 aspect-4/5 size-full object-cover sm:rounded-lg lg:aspect-3/4" />
+    </div>
+
+    <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
+      <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">${el.name}</h1>
+      </div>
+      <div class="mt-4 lg:row-span-3 lg:mt-0">
+        <h2 class="sr-only">Product</h2>
+        <p class="text-3xl tracking-tight text-gray-900">${el.price}</p>
+        <!-- ... qolgan kod o‘sha holatda ... -->
+      </div>
+    </div>
+  </div>
+  `;
+});
+
+

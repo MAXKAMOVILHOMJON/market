@@ -9,109 +9,81 @@ let pen = products.filter((el) => el.id === id);
 
 
 pen.map((el) => {
-  srt.innerHTML += `<div class="pt-6">
-       
-    
-    <!-- Image gallery -->
-    <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
-      <img src="${el.images[0]}" alt="Two each of gray, white, and black shirts laying flat." class="row-span-2 aspect-3/4 size-full rounded-lg object-cover max-lg:hidden" />
-      <img src="${el.images[1]}" alt="Model wearing plain black basic tee." class="col-start-2 aspect-3/2 size-full rounded-lg object-cover max-lg:hidden" />
-      <img src="${el.images[2]}" alt="Model wearing plain gray basic tee." class="col-start-2 row-start-2 aspect-3/2 size-full rounded-lg object-cover max-lg:hidden" />
-      <img src="${el.images[3]}" alt="Model wearing plain white basic tee." class="row-span-2 aspect-4/5 size-full object-cover sm:rounded-lg lg:aspect-3/4" />
+  srt.innerHTML += `<div>
+           <h1>${el.name}</h1>
+        <ol class="grid grid-cols-4  gap-[10px] w-[500px]">
+        <li>арт. 371431</li>
+        <li>   ${el.rating ===5 ? `<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > </span>
+       ` : el.rating===4.5 ? `<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star (1).png" alt="" class="max-w-10 max-h-10" > </span>
+       `:el.rating===4 ? `<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+           </span>
+       `  : el.rating===3.5 ? `<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star (1).png" alt="" class="max-w-10 max-h-10" > </span>
+       `: el.rating===3 ? `<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+       </span>
+       `: el.rating===2.5 ?`<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+          </span>
+       `: el.rating===2 ?`<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" >
+         >
+         </span>
+       `: el.rating===1.5  ?`<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+          <img src="../assets/images/articles/star (1).png" alt="" class="max-w-10 max-h-10" >
+          </span>
+       `: el.rating===1 ? `<span class="flex pb-[10px] space-x-1"><img src="../assets/images/articles/star.png" alt="" class="max-w-10 max-h-10" > 
+        </span>
+       `: `` } </li>
+        <li class="flex gap-[5px]"><img class="w-[20px] h-[20px]" src="../assets/images/articles/share-2.png" alt="mkl" srcset="">Поделиться </li>
+        <li class="flex gap-[5px]"><img class="w-[20px] h-[20px]"  src="../assets/images/articles/heart.png" alt="lk" srcset=""> В избраное</li>
+      </ol> 
     </div>
-
-    <!-- Product info -->
-    <div class="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
-      <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">${el.name}</h1>
-      </div>
-
-      <!-- Options -->
-      <div class="mt-4 lg:row-span-3 lg:mt-0">
-        <h2 class="sr-only">Product</h2>
-        <p class="text-3xl tracking-tight text-gray-900">${el.price}</p>
-
-        <!-- Reviews -->
-        <div class="mt-6">
-          <h3 class="sr-only">Reviews</h3>
-          <div class="flex items-center">
-            
-         ${el.rating ===5 ? `<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > </div>
-         ` : el.rating===4.5 ? `<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/OIP.png" alt="" class="max-w-10 max-h-10" > </div>
-         `:el.rating===4 ? `<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-             </div>
-         `  : el.rating===3.5 ? `<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/OIP.png" alt="" class="max-w-10 max-h-10" > </div>
-         `: el.rating===3 ? `<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-         </div>
-         `: el.rating===2.5 ?`<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-            <img src="../assets/images/articles/OIP.png" alt="" class="max-w-10 max-h-10" >
-            </div>
-         `: el.rating===2 ?`<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" >
-           >
-           </div>
-         `: el.rating===1.5  ?`<div class="flex items-center"> <img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-            <img src="../assets/images/articles/OIP.png" alt="" class="max-w-10 max-h-10" >
-            </div>
-         `: el.rating===1 ? `<div class="flex items-center"><img src="../assets/images/articles/00.jpg" alt="" class="max-w-10 max-h-10" > 
-          </div>
-         `: `` } 
-          </div>
-        </div>
-      <form class="mt-10">
-          <!-- Colors -->
+        <div class="grid grid-cols-2  my-[20px]">
+          <div class="flex items-center gap-[20px]"> 
+               <div class="flex flex-col gap-[5px] " >
+               <img class="w-[100px] object-cover" src="${el.images[0]}" alt="">
+               <img class="w-[100px] object-cover" src="${el.images[1]}" alt="">
+               <img class="w-[100px] object-cover" src="${el.images[2]}" alt="">
+               <img class="w-[100px] object-cover" src="${el.images[3]}" alt=""> 
+               </div>  
+               <img class="h-full" src="${el.images[1]}" alt="">   
+          </div> 
           <div>
-            <h3 class="text-sm font-medium text-gray-900">discount</h3>
-
-            <fieldset aria-label="Choose a color" class="mt-4">
-             <p class="text-[white]  bg-[#FF6633] rounded-[4px]">-${el.discount}%</p>
-            </fieldset>
-          </div>
-
-          <!-- Sizes -->
-          <div class="mt-10">
-           
-
-            <fieldset aria-label="Choose a size" class="mt-4">
-                  <div class="flex justify-between"><h1 class="text-[18px] font-[700]">${el.price * (100 - el.discount) / 100}₽</h1><h2 class="text-[16px] font-[400] text-[#606060] line-through decoration-pink-500">${el.price}₽</h2></div>
-            </fieldset>
-          </div>
-
-          <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Add to bag</button>
-        </form>
-      </div>
-      </div>
-        <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pr-8 lg:pb-16">
-            <!-- Description and details -->
-            <div>
-              <h3 class="sr-only">Description</h3>
-    
-              <div class="space-y-6">
-                <p class="text-base text-gray-900">${el.description}</p>
+            <div class="p-[8px] w-full">
+              <div class="flex justify-between"><h1 class="text-[18px] font-[700]">${el.price * (100 - el.discount) / 100}₽</h1><h2 class="text-[16px] font-[400] text-[#606060] line-through decoration-pink-500">${el.price}₽</h2></div>
+              <div class="flex justify-between"><p class="text-[#BFBFBF] text-[12px] font-[400]">С картой</p><p class="text-[#BFBFBF] text-[12px] font-[400]">Обычная</p>
               </div>
-            </div>
-        </div>
       
-       </div>
+              <button class="cursor-pointer max-w-[279px] w-full h-[60px] ml-[100px]  my-2 pb-[20px] px-[20px] rounded-[4px] border-[1px] border-[#70C05B] text-[#70C05B] text-[16px] text-center  font-[400] font-rubik bg-[#FF6633] hover:border-[#FF6633] hover:text-[white] duration-300 "><a href="#"><img class="w-[30px] absolute " src="../assets/images/articles/shopping-cart.png" alt=""> В корзину</a></button>
+              <div class="flex flex-col  gap-[10px]  my-[30px]">
+               <div class="grid grid-cols-2 gap-[50px]"><h1>категория</h1> <h2>${el.category} </h2> </div>
+               <div class="grid grid-cols-2 gap-[50px]"><h1>Страна производителя</h1> <h2>uzb</h2> </div>
+               <div class="grid grid-cols-2 gap-[50px]"><h1>Упаковка</h1> <h2>${el.kg} </h2> </div>
+
+              </div>
+
+          </div>
+
         </div>
-    </div>` 
+` 
   
   ;
 });
+
+

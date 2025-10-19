@@ -1,11 +1,19 @@
-let pejak = document.querySelector('#aksiya')
-let Newitems = document.querySelector('#items')
-let before = document.querySelector('#before')
-let Art = document.querySelector("#articles")
-let fitpoduk = products.filter((el) => el.discount > 0)
-let tor = fitpoduk.slice(fitpoduk.length - 4, fitpoduk.length)
-let newi = products.slice(products.length - 4, products.length)
+let pejak = document.querySelector('#aksiya');
+let Newitems = document.querySelector('#items');
+let before = document.querySelector('#before');
+let Art = document.querySelector("#articles");
+let loading = document.getElementById("loading")
 
+
+
+let fitpoduk = products.filter((el) => el.discount > 0);
+let tor = fitpoduk.slice(fitpoduk.length - 4, fitpoduk.length);
+let newi = products.slice(products.length - 4, products.length);
+
+
+window.addEventListener("load" , function(){
+   loading.classList.add("hidden")
+})
 
 tor.map((el) => {
     pejak.innerHTML += `<div class="w-full   max-w-[160px] sm:max-w-[204px]  w-full  w-[260px] sm:w-[304px] md:w-[324px]   xl:max-w-[472px] max-h-[443px] sm:max-h-[449px] bg-[white] rounded-[4px] shadow-md hover:shadow-orange-300 hover:shadow-xl duration-300 my-5" >
@@ -187,4 +195,5 @@ Articles.map((el) => {
           </div>  `
 
 });
+
 

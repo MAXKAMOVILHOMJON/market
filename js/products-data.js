@@ -14,6 +14,7 @@ const products = [
       "../assets/images/products/1_4.png",
     ],
     kg:"1kg ",
+    modeIn : "Oʻzbekiston"
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const products = [
       "../assets/images/products/2_4.png",
     ],
     kg:"1kg ",
+    modeIn : "Turkiya"
   },
   {
     id: 3,
@@ -48,6 +50,7 @@ const products = [
       "../assets/images/products/3_4.png",
     ],
     kg:"300g ",
+    modeIn : "Oʻzbekiston"
   },
   {
     id: 4,
@@ -65,6 +68,7 @@ const products = [
       "../assets/images/products/4_4.png",
     ],
     kg:"500g ",
+    modeIn : " Xitoy"
   },
   {
     id: 5,
@@ -82,6 +86,7 @@ const products = [
       "../assets/images/products/5_4.png",
     ],
     kg:"2kg ",
+    modeIn : "Oʻzbekiston"
   },
   {
     id: 6,
@@ -99,6 +104,7 @@ const products = [
       "../assets/images/products/6_4.png",
     ],
     kg:"400g",
+    
   },
   {
     id: 7,

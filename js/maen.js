@@ -183,8 +183,8 @@ newi.map((el) => {
 
 Articles.map((el) => {
     Art.innerHTML += ` <div
-            class=" w-full max-w-475   rounded-[4px] shadow-md hover:shadow-orange-300 hover:shadow-xl duration-300  ">
-            <div><img src="${el.images}" alt=""> </div>
+            class=" w-full max-w-475  animate-pulse rounded-[4px] shadow-md hover:shadow-orange-300 hover:shadow-xl duration-300  ">
+            <div><img class="w-  "  src="${el.images}" alt=""> </div>
             <p class="mx-3 my-3">${el.date}</p>
             <h1 class="mx-3 my-3  text-2xl">${el.name}</h1>
             <p class="mx-3 my-3">${el.description}</p>

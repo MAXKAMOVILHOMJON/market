@@ -73,7 +73,7 @@ pen.map((el) => {
               <button class="cursor-pointer max-w-[279px] w-full h-[60px] ml-[100px]  my-2 pb-[20px] px-[20px] rounded-[4px] border-[1px] border-[#70C05B] text-[#70C05B] text-[16px] text-center  font-[400] font-rubik bg-[#FF6633] hover:border-[#FF6633] hover:text-[white] duration-300 "><a href="./Basket.html"><img class="w-[30px] absolute " src="../assets/images/articles/shopping-cart.png" alt=""> В корзину</a></button>
               <div class="flex flex-col  gap-[10px]  my-[30px]">
                <div class="grid grid-cols-2 gap-[50px]"><h1>категория</h1> <h2>${el.category} </h2> </div>
-               <div class="grid grid-cols-2 gap-[50px]"><h1>Страна производителя</h1> <h2>uzb</h2> </div>
+               <div class="grid grid-cols-2 gap-[50px]"><h1>Страна производителя</h1> <h2>${el.modeIn}</h2> </div>
                <div class="grid grid-cols-2 gap-[50px]"><h1>Упаковка</h1> <h2>${el.kg} </h2> </div>
 
               </div>

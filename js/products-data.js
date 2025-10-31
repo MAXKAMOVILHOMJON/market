@@ -104,7 +104,8 @@ const products = [
       "../assets/images/products/6_4.png",
     ],
     kg:"400g",
-    
+    modeIn : "Fransiya"
+
   },
   {
     id: 7,
@@ -122,6 +123,7 @@ const products = [
       "../assets/images/products/7_4.png",
     ],
     kg:"700g",
+    modeIn : "Oʻzbekiston"
   },
   {
     id: 8,
@@ -139,6 +141,7 @@ const products = [
       "../assets/images/products/8_4.png",
     ],
     kg:"300g",
+    modeIn : "Rossiya"
   },
   {
     id: 9,
@@ -156,6 +159,7 @@ const products = [
       "../assets/images/products/9_4.png",
     ],
     kg:"200g",
+    modeIn : "Italiya"
   },
   {
     id: 10,
@@ -172,6 +176,7 @@ const products = [
       "../assets/images/products/10_3.png",
       "../assets/images/products/10_4.png",
     ],kg:"30 ta",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 11,
@@ -189,6 +194,7 @@ const products = [
       "../assets/images/products/11_4.png",
     ],
     kg:"1kg 200g",
+    modeIn : "Yaponiya"
   },
   {
     id: 12,
@@ -205,6 +211,7 @@ const products = [
       "../assets/images/products/12_3.png",
       "../assets/images/products/12_4.png",
     ],kg:"1kg ",
+    modeIn : " Gruziya" 
   },
   {
     id: 13,
@@ -220,7 +227,8 @@ const products = [
       "../assets/images/products/13_2.png",
       "../assets/images/products/13_3.png",
       "../assets/images/products/13_4.png",
-    ],kg:"300g", 
+    ],kg:"300g",
+    modeIn : "Kanada" 
   },
   {
     id: 14,
@@ -238,6 +246,7 @@ const products = [
       "../assets/images/products/14_4.png",
     ],
     kg:"200g ",
+    modeIn : "Kanada"
   },
   {
     id: 15,
@@ -254,6 +263,7 @@ const products = [
       "../assets/images/products/15_3.png",
       "../assets/images/products/15_4.png",
     ],kg:"500g ",
+    modeIn : "Turkiya"
   },
   {
     id: 16,
@@ -270,6 +280,7 @@ const products = [
       "../assets/images/products/16_3.png",
       "../assets/images/products/16_4.png",
     ],kg:"1kg ",
+    modeIn : "Oʻzbekiston" 
   },
   {
     id: 17,
@@ -286,6 +297,7 @@ const products = [
       "../assets/images/products/10_3.png",
       "../assets/images/products/10_4.png",
     ],kg:"500g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 18,
@@ -302,6 +314,7 @@ const products = [
       "../assets/images/products/18_3.png",
       "../assets/images/products/18_4.png",
     ],kg:"600g",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 19,
@@ -318,6 +331,7 @@ const products = [
       "../assets/images/products/15_3.png",
       "../assets/images/products/15_4.png",
     ],kg:"200g ",
+      modeIn : "Turkiya"
   },
   {
     id: 20,
@@ -334,6 +348,7 @@ const products = [
       "../assets/images/products/20_3.png",
       "../assets/images/products/20_4.png",
     ],kg:"1kg ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 21,
@@ -350,6 +365,7 @@ const products = [
       "../assets/images/products/21_3.png",
       "../assets/images/products/21_4.png",
     ],kg:"400g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 22,
@@ -366,6 +382,7 @@ const products = [
       "../assets/images/products/22_3.png",
       "../assets/images/products/22_4.png",
     ],kg:"300g ",
+      modeIn : "Tailand"
   },
   {
     id: 23,
@@ -382,6 +399,7 @@ const products = [
       "../assets/images/products/23_3.png",
       "../assets/images/products/23_4.png",
     ],kg:"300g ",
+      modeIn : "Xitoy"
   },
   {
     id: 24,
@@ -398,6 +416,7 @@ const products = [
       "../assets/images/products/24_3.png",
       "../assets/images/products/24_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 25,
@@ -414,6 +433,7 @@ const products = [
       "../assets/images/products/25_3.png",
       "../assets/images/products/25_4.png",
     ],kg:"300g ",
+      modeIn : "Qozogʻiston"
   },
   {
     id: 26,
@@ -430,6 +450,7 @@ const products = [
       "../assets/images/products/26_3.png",
       "../assets/images/products/26_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 27,
@@ -446,6 +467,7 @@ const products = [
       "../assets/images/products/27_3.png",
       "../assets/images/products/27_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 28,
@@ -462,6 +484,7 @@ const products = [
       "../assets/images/products/28_3.png",
       "../assets/images/products/28_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 29,
@@ -478,6 +501,7 @@ const products = [
       "../assets/images/products/29_3.png",
       "../assets/images/products/29_4.png",
     ],kg:"300g ",
+      modeIn : "Italiya"
   },
   {
     id: 30,
@@ -494,6 +518,7 @@ const products = [
       "../assets/images/products/30_3.png",
       "../assets/images/products/30_4.png",
     ],kg:"300g ",
+        modeIn : "Italiya"
   },
   {
     id: 31,
@@ -510,6 +535,7 @@ const products = [
       "../assets/images/products/31_3.png",
       "../assets/images/products/31_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 32,
@@ -526,6 +552,7 @@ const products = [
       "../assets/images/products/32_3.png",
       "../assets/images/products/32_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 33,
@@ -542,6 +569,7 @@ const products = [
       "../assets/images/products/33_3.png",
       "../assets/images/products/33_4.png",
     ],kg:"1kg 200g ",
+      modeIn : "Yaponiya"
   },
   {
     id: 34,
@@ -558,6 +586,7 @@ const products = [
       "../assets/images/products/34_3.png",
       "../assets/images/products/34_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 35,
@@ -574,6 +603,7 @@ const products = [
       "../assets/images/products/35_3.png",
       "../assets/images/products/35_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
   {
     id: 36,
@@ -590,6 +620,7 @@ const products = [
       "../assets/images/products/36_3.png",
       "../assets/images/products/36_4.png",
     ],kg:"300g ",
+      modeIn : "Oʻzbekiston"
   },
 ];
 

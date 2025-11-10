@@ -12,7 +12,8 @@
     <img class="w-full h-full" src="./assets/images/articles/Bean Eater@1x-1.0s-200px-200px.svg" alt="">
   </div>
 
-   <header class="py-[11px] px-[20px] bg-[white] border-b-[3px] border-[#E8E2C8] fixed w-full max-w-[500px] sm:max-w-[1500px] top-[0] z-[2]">
+  <header
+    class="py-[11px] px-[20px] bg-[white] border-b-[3px] border-[#E8E2C8] fixed w-full max-w-[500px] sm:max-w-[1500px] top-[0] z-[2]">
     <div class="container mx-auto flex justify-between items-center gap-[16px]">
       <a class="flex gap-[11px]" href=""><img class="max-w-[39px] w-full h-[32px]"
           src="./assets/images/articles/Group.png" alt="logo">
@@ -31,31 +32,34 @@
           </svg>
         </p>
       </a>
-      <button
-        class="hidden sm:flex gap-[15px] bg-green-500 max-w-[40px] 2xl:max-w-[140px] xl:max-w-[140px] md:max-w-[140px] lg:max-w-[40px] w-full h-[40px] cursor-pointer items-center p-[8px] text-[white] rounded-[8px]"><img
-          src="./assets/images/articles/menu.png" alt="">
-        <p class="hidden md:flex lg:hidden xl:flex">Каталог</p>
-      </button>
+      <div
+        class="hidden sm:flex gap-[15px] bg-green-500 max-w-[40px] 2xl:max-w-[140px] xl:max-w-[140px] md:max-w-[140px] lg:max-w-[40px] w-full h-[40px] cursor-pointer items-center p-[8px] text-[white] rounded-[8px]">
+        <button id="toggle"><img
+          src="./assets/images/articles/menu.png" alt=""></button>
+        <a class="hidden md:flex lg:hidden xl:flex" href="./pen/Allproducts.html">Каталог</a>
+      </div>
       <form class="max-w-[350px] relative ">
         <div class="flex">
-          <input 
+          <input
             class="w-[220px] sm:w-[280px] xl:w-[336px] h-[40px] rounded-l-[8px] border-[2px] border-solid border-green-500 px-[16px] outline-neutral-500 border-r-0 border-r-transparent "
             type="search" name="" placeholder="Найти товар" id="input">
           <button
             class="w-[40px] h-[40px] rounded-r-[8px] border-[2px] border-green-500 outline-neutral-500 border-l-0 pl-[7px] cursor-pointer"><img
               src="./assets/images/articles/search.png" alt=""></button>
         </div>
-        <div id="searchCard" class="hidden w-full max-h-[400px] overflow-auto  flex flex-col gap-[10px]  border-[2px] bg-[#FFFFFF] border-green-500 rounded-[10px] p-[20px]   absolute">
-        
+        <div id="searchCard"
+          class="hidden w-full max-h-[400px] overflow-auto  flex flex-col gap-[10px]  border-[2px] bg-[#FFFFFF] border-green-500 rounded-[10px] p-[20px]   absolute">
+
         </div>
       </form>
       <ul class="flex gap-[24px] hidden lg:flex">
         <li class="place-items-center pt-[5px]"><a class="flex flex-col items-center" href="./pen/test.html"><img
               src="./assets/images/articles/Frame 211.png" alt="">Избранное</a></li>
-        <li class="place-items-center pt-[5px]"><a class="flex flex-col items-center" href=""><img
+        <li class="place-items-center pt-[5px]"><a class="flex flex-col items-center" href="./pen/"><img
               src="./assets/images/articles/Frame 211 (2).png" alt="">Продукты</a></li>
-        <li class="place-items-center"><a class="flex flex-col items-center" href="./pen/Basket.html"><img
-              src="./assets/images/articles/Frame 211 (3).png" alt="">Корзина </a></li>
+        <li class="place-items-center"><a class="flex flex-col items-center relative" href="./pen/Basket.html"><samp
+              id="kop" class="absolute bottom-[35px] text-red-500">0</samp> <img src="./assets/images/articles/shopping-cart.svg" alt=""> Корзина
+          </a></li>
       </ul>
       <div class="hidden sm:flex items-center gap-[10px]">
         <img class="w-[40px] h-[40px]" src="./assets/images/articles/avatar.png" alt="">
@@ -64,6 +68,10 @@
       </div>
     </div>
   </header>
+  <div
+      id="toggle-categories"
+      class="grid duration-300 grid-cols-4 gap-[30px] bg-green-700 translate-y-[-100%] p-[20px] w-full left-0 z-1 absolute top-0"
+    ></div>
   <main>
     <section class="bg-[url('./assets/images/articles/pre.png')] bg-cover bg-no-repeat pt-[72px]">
       <div class="container mx-auto flex items-center justify-center">
@@ -78,10 +86,12 @@
         <div class="flex items-center justify-between">
           <h1 class="text-[24px] lg:text-[36px] font-[700] pb-[40px]">Акции</h1>
           <span class="flex place-items-center align-middle pb-[25px] gap-[10px]">
-            <a href="./pen/Allproducts.html" class="text-[#606060]">Все продукты </a><img src="./assets/images/articles/chevron-right.png" alt="">
+            <a href="./pen/Allproducts.html" class="text-[#606060]">Все продукты </a><img
+              src="./assets/images/articles/chevron-right.png" alt="">
           </span>
         </div>
-        <div  class=" grid  grid-cols-2 grid-cols-2 lg:grid  lg:grid-cols-3 xl:grid xl:grid-cols-4 gap-[30px] px-[20px]" id="aksiya"  ></div>
+        <div class=" grid  grid-cols-2 grid-cols-2 lg:grid  lg:grid-cols-3 xl:grid xl:grid-cols-4 gap-[30px] px-[20px]"
+          id="aksiya"></div>
       </div>
     </section>
     <section class="bg-[#FBF8EC] px-[20px] pt-[80px] pb-[120px]">
@@ -92,7 +102,8 @@
             <p class="text-[#606060]">Все продукты </p><img src="./assets/images/articles/chevron-right.png" alt="">
           </span>
         </div>
-        <div class=" grid  grid-cols-2 grid-cols-2 lg:grid  lg:grid-cols-3 xl:grid xl:grid-cols-4 gap-[30px] px-[20px]" id="items"></div>
+        <div class=" grid  grid-cols-2 grid-cols-2 lg:grid  lg:grid-cols-3 xl:grid xl:grid-cols-4 gap-[30px] px-[20px]"
+          id="items"></div>
       </div>
     </section>
     <section class="bg-[#FBF8EC] px-[20px] pt-[80px] pb-[120px]">
@@ -103,7 +114,8 @@
             <p class="text-[#606060]">Все продукты </p><img src="./assets/images/articles/chevron-right.png" alt="">
           </span>
         </div>
-          <div class=" grid  grid-cols-2 grid-cols-2 lg:grid  lg:grid-cols-3 xl:grid xl:grid-cols-4 gap-[30px] px-[20px]"id="before"></div>
+        <div class=" grid  grid-cols-2 grid-cols-2 lg:grid  lg:grid-cols-3 xl:grid xl:grid-cols-4 gap-[30px] px-[20px]"
+          id="before"></div>
       </div>
     </section>
     <section class="bg-[#FBF8EC] px-[20px] pb-[120px]">
@@ -117,7 +129,8 @@
               <p class="white-space text-[16px] font-[400]">И получайте бонусы при покупке в магазинах и на сайте</p>
             </div>
             <div class="max-w-[600px] mx-[20px] my-[20px]">
-              <img class="  w-full  h-[120px] rounded-lg  origin-center rotate-13 " src="./assets/images/articles/22.jpg" alt="">
+              <img class="  w-full  h-[120px] rounded-lg  origin-center rotate-13 "
+                src="./assets/images/articles/22.jpg" alt="">
             </div>
           </div>
           <div
@@ -145,7 +158,8 @@
             class="bg-gray-200 hover:bg-green-700 hover:text-[#FFFFFF] w-full max-w-30 rounded-md">д.Вертеп</button>
           <button
             class="bg-gray-200 hover:bg-green-700 hover:text-[#FFFFFF] w-full max-w-30 rounded-md">с.Краснобор</button>
-          <button class="my-[10px]  bg-gray-200 hover:bg-green-700 hover:text-[#FFFFFF] w-full max-w-30 rounded-md">д.Диюр</button>
+          <button
+            class="my-[10px]  bg-gray-200 hover:bg-green-700 hover:text-[#FFFFFF] w-full max-w-30 rounded-md">д.Диюр</button>
         </div>
       </div>
       <iframe
@@ -164,8 +178,8 @@
         <div class="  gap-4 sm:grid sm:grid-cols-3  gap-10" id="articles"></div>
       </div>
     </section>
-   
-  </main> 
+      
+  </main>
   <footer class=" py-[90px]  bg-[url(./assets/footer/pattern2 (2).png)]">
     <div class="container mx-auto  pt-[0px] pb-[0px] px-[20px]">
       <div class="flex items-center  gap-[50px] px-[60px]">
@@ -210,10 +224,13 @@
     </div>
     </div>
   </footer>
-  
+
   <script src="./js/products-data.js"></script>
+  <script src="./js/category-data.js"></script>
   <script src="./js/search.js"></script>
-  <script src="./js/maen.js"></script>
+  <script src="./js/toggle.js"></script>
+ <script src="./js/maen.js"></script>
+
 </body>
 
 </html>

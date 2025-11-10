@@ -16,8 +16,8 @@ card.innerHTML ="";
  
  searchedProducts.length > 0 ?
   searchedProducts.map((el) => {
-     card.innerHTML += ` <a href="./pen/test.html?id=${el.id}" class="flex border-[2px] rounded-[5px] p-[10px] gap-[20px]">
-          <img src=${el.images[0]} alt="" width="80px" height="80px">
+     card.innerHTML += ` <a href="./pen/test.html?id=${el.id}" class="flex border-[2px]   rounded-[5px] p-[10px] gap-[20px]">
+          <img src=${el.images[0]} alt="" width="80px"  height="50px">
           <div class="flex flex-col justify-between  gap-[10px]">
             <h1>${el.name}</h1>
             <p class="line-clamp-[1] ">${el.description}</p>

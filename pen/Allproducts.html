@@ -9,7 +9,7 @@
 
 <body class="bg-yellow-100 ">
  
-  <header class="py-[11px] px-[20px] bg-[white] border-b-[3px] border-[#E8E2C8] fixed w-full max-w-[500px] sm:max-w-[1500px] top-[0] z-[2]">
+  <header class="py-[11px] px-[20px] bg-[white] border-b-[3px] border-[#E8E2C8]  fixed w-full max-w-[500px] sm:max-w-[1500px] top-[0] z-[2]">
     <div class="container mx-auto flex justify-between items-center gap-[16px]">
       <a class="flex gap-[11px]" href=""><img class="max-w-[39px] w-full h-[32px]"
           src="../assets/images/articles/Group.png" alt="logo">
@@ -62,31 +62,15 @@
     </div>
   </header>
   <main>
-    <section class="bg-[#FBF8EC] px-[20px] pb-[120px]">
-        <div class="container mx-auto">
-          <h1 class="text-[24px] lg:text-[36px] font-[700] pb-[40px]">Все продукты</h1>
-          <div id="product" class="grid justify-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] px-[20px]"></div>
-          
-      </section>
+    <h1>categories</h1>
+    <div
+      id="categories-cards"
+      class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[60px] my-[100px]"
+    >  
     
-      <section class="bg-[#FBF8EC] px-[20px] pt-[80px] pb-[120px]">
-        <div class="container mx-auto">
-          <div class="flex items-center justify-between">
-            <h1 class="text-[24px] lg:text-[36px] font-[700] pb-[40px]">Акции</h1>
-            <span class="flex place-items-center align-middle pb-[25px] gap-[10px]">
-              <a href="./pen/Allproducts.html" class="text-[#606060]">Все продукты </a><img src="./assets/images/articles/chevron-right.png" alt="">
-            </span>
-          </div>
-          <div
-            class="grid justify-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] px-[20px]"
-            id="aksiya"  ></div>
-        </div>
-      </section>
-      
-        
-     
-
+    </div>
   </main>
+
   <footer class="hidden   py-[90px]  bg-[url(./assets/footer/pattern2 (2).png)]">
     <div class="container mx-auto  pt-[0px] pb-[0px] px-[20px]">
       <div class="flex items-center  gap-[50px] px-[60px]">
@@ -132,8 +116,10 @@
     </div>
   </footer>
   <script src="../js/products-data.js"></script>
+  <script src="../js/category-data.js"></script>
   <script src="../js/search.js"></script>
   <script src="../js/test.js"></script>
-</body>
+  <script src="../js/cate.js"></script>
+  </body>
 
 </html>
